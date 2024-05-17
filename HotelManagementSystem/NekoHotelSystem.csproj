@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2941BE27-9E1F-4DEE-9819-BC7745225303}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>HotelManagementSystem</RootNamespace>
+    <AssemblyName>NekoHotelSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FontAwesome.Sharp, Version=6.3.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
+      <HintPath>..\packages\FontAwesome.Sharp.6.3.0\lib\net472\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BuildInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuildInfo.Designer.cs">
+      <DependentUpon>BuildInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DBHelper.cs" />
+    <Compile Include="DormFouls.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DormFouls.Designer.cs">
+      <DependentUpon>DormFouls.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDormlnfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDormlnfo.Designer.cs">
+      <DependentUpon>FrmDormlnfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DormRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DormRegister.Designer.cs">
+      <DependentUpon>DormRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DormRepair.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DormRepair.Designer.cs">
+      <DependentUpon>DormRepair.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RepairFeedback.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RepairFeedback.Designer.cs">
+      <DependentUpon>RepairFeedback.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RepairRecord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RepairRecord.Designer.cs">
+      <DependentUpon>RepairRecord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StuInfoRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StuInfoRegister.Designer.cs">
+      <DependentUpon>StuInfoRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserHelper.cs" />
+    <Compile Include="WFMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WFMain.Designer.cs">
+      <DependentUpon>WFMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FoulsFeedback.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FoulsFeedback.Designer.cs">
+      <DependentUpon>FoulsFeedback.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FoulsRecord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FoulsRecord.Designer.cs">
+      <DependentUpon>FoulsRecord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InfoRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InfoRegister.Designer.cs">
+      <DependentUpon>InfoRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InfoSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InfoSearch.Designer.cs">
+      <DependentUpon>InfoSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MRegister.Designer.cs">
+      <DependentUpon>MRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MUpdate.Designer.cs">
+      <DependentUpon>MUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="BuildInfo.resx">
+      <DependentUpon>BuildInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDormlnfo.resx">
+      <DependentUpon>FrmDormlnfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DormRegister.resx">
+      <DependentUpon>DormRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InfoSearch.resx">
+      <DependentUpon>InfoSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MRegister.resx">
+      <DependentUpon>MRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MUpdate.resx">
+      <DependentUpon>MUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StuInfoRegister.resx">
+      <DependentUpon>StuInfoRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WFMain.resx">
+      <DependentUpon>WFMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b5d9627d4fac5846671da74b76a820a0.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
